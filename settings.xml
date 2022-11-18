@@ -1,53 +1,36 @@
-<servers>
+<settings xmlns="http://maven.apache.org/SETTINGS/1.0.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0
+                      http://maven.apache.org/xsd/settings-1.0.0.xsd">
 
-<server>
+  <activeProfiles>
+    <activeProfile>github</activeProfile>
+  </activeProfiles>
 
-     <id>github</id>
-
-     <username>devopshint</username>
-
-     <password>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</password>
-
-     </server>
-
-</servers>
-
-<profiles>
-
- <profile>
-
+  <profiles>
+    <profile>
       <id>github</id>
-
       <repositories>
-
         <repository>
-
           <id>central</id>
-
           <url>https://repo1.maven.org/maven2</url>
-
-  <releases><enabled>true</enabled></releases>
-
-          <snapshots><enabled>true</enabled></snapshots>
-
         </repository>
-
         <repository>
-
           <id>github</id>
-
-          <url>https://maven.pkg.github.com/devopshint/maven-project></url>
-
+          <url>https://maven.pkg.github.com/devopshint/maven-project</url>
           <snapshots>
-
             <enabled>true</enabled>
-
           </snapshots>
-
         </repository>
-
       </repositories>
-
     </profile>
+  </profiles>
 
-</profiles>
+  <servers>
+    <server>
+      <id>github</id>
+      <username>devopshint</username>
+      <password>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</password>
+    </server>
+  </servers>
+</settings>
