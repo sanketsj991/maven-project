@@ -71,6 +71,7 @@
           <artifactId>maven-project-info-reports-plugin</artifactId>
           <version>3.0.0</version>
         </plugin>
+        <plugin>
          <distributionManagement>
 
     <repository>
@@ -84,6 +85,7 @@
     </repository>
 
 </distributionManagement>
+          </plugin>
       </plugins>
     </pluginManagement>
   </build>
